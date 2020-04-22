@@ -20,7 +20,7 @@
 
 ## Getting Started
 
-### Brief Into to .NET
+### Brief Intro to .NET
 
 - basic names of things
 - projects and such
