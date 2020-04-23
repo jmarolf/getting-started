@@ -4,7 +4,7 @@ This is a resource for getting started with Visual Studio in devdiv!
 
 This repo contains a trimmed down .NET console app from our [csharp tutorial docs](https://docs.microsoft.com/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes). We'll use it to demonstrate the got-to-know features of Visual Studio.
 
-## Tabe of Contents
+## Table of Contents
 
 - [Resources](#resources)
 - [Getting Started](#getting-started)
@@ -148,7 +148,7 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 - Task list ([ctrl+\,T](https://docs.microsoft.com/visualstudio/ide/using-the-task-list?view=vs-2019))
   - "Lets make sure I don't forget to do this before I submit a pull request"
 
-#### Controling Views and Windows
+#### Controlling Views and Windows
 
 - [Split window](https://docs.microsoft.com/visualstudio/ide/how-to-manage-editor-windows?view=vs-2019)
   - For when the method is just too long and you need to see two parts at once
