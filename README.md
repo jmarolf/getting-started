@@ -6,6 +6,39 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 
 ## Table of Contents
 
+- [Resources](#resources)
+- [Getting Started](#getting-started)
+  - [Learning .NET](#learning-net)
+  - [Source Control](#source-control)
+  - [Installation](#installation)
+  - [Developer command prompt](#developer-command-prompt)
+- [Using Visual Studio](#using-visual-studio)
+  - [New Project Dialog](#new-project-dialog)
+  - [Solution Explorer](#solution-explorer)
+  - [Code Editor](#code-editor)
+    - [Basics](#basics)
+    - [Important General Tool Windows](#important-general-tool-windows)
+    - [Controlling Views and Windows](#controlling-views-and-windows)
+    - [Symbol Navigation](#symbol-navigation)
+    - [Tools, Options](#tools-options)
+- [Solving Problems in Visual Studio](#solving-problems-in-visual-studio)
+  - [Debugging](#debugging)
+    - [Setup](#setup)
+    - [Basic](#basic)
+      - [Watch Window](#watch-window-ctrlaltwhttpsdocsmicrosoftcomvisualstudiodebuggerwatch-and-quickwatch-windowsviewvs-2019)
+      - [Call Stack Window](#call-stack-window-ctrlaltchttpsdocsmicrosoftcomvisualstudiodebuggerhow-to-use-the-call-stack-windowviewvs-2019)
+      - [Breakpoints Window](#breakpoints-window-ctrlaltbhttpsdocsmicrosoftcomvisualstudiodebuggerusing-breakpointsviewvs-2019bkmk_specify_advanced_properties_of_a_breakpoint_)
+    - [Advanced Debugging](#advanced-debugging)
+      - [Conditional Breakpoint](#conditional-breakpointhttpsdocsmicrosoftcomvisualstudiodebuggerusing-breakpointsviewvs-2019breakpoint-conditions)
+      - [Exception Settings](#exception-settings-ctrlaltehttpsdocsmicrosoftcomvisualstudiodebuggermanaging-exceptions-with-the-debuggerviewvs-2019)
+      - ["Just My Code"](#just-my-code)
+      - [Pin tool tips in editor](#pin-tool-tips-in-editorhttpsdocsmicrosoftcomvisualstudiodebuggerdebugger-tips-and-tricksviewvs-2019pin-data-tips)
+    - [Testing](#testing)
+      - [Run tests from editor (CTRL+R,T)](#run-tests-from-editor-ctrlrt)
+      - [Debug tests from editor (CTRL+R,CTRL+T)](#debug-tests-from-editor-ctrlrctrlt)
+      - [Run from codelens](#run-from-codelens)
+      - [Test Explorer](#test-explorer-ctrlethttpsdocsmicrosoftcomvisualstudiotestrun-unit-tests-with-test-explorerviewvs-2019run-tests-in-test-explorer)
+      - [Test output](#test-output)
 
 ## Resources
 
@@ -49,6 +82,7 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 ### Developer command prompt
 
 ![image](https://user-images.githubusercontent.com/9797472/80104650-51768b00-852c-11ea-9ab2-3bf34c786e1a.png)
+
 - Where it is
   - Searchable from the start menu
   - Script is located under `C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat`
@@ -92,8 +126,6 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
     - "This is the thing I want to launch in the debugger"
 
 ### Code Editor
-
-![image](https://user-images.githubusercontent.com/9797472/80105544-9818b500-852d-11ea-9722-1dea89b26778.png)
 
 #### Basics
 
@@ -257,37 +289,62 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 
 #### Advanced Debugging
 
-##### Breakpoints
+##### [Conditional Breakpoint](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019#breakpoint-conditions)
 
 ![image](https://user-images.githubusercontent.com/9797472/80109025-df08a980-8531-11ea-9148-b54d1e112305.png)
 
-- [Conditional Breakpoint](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019#breakpoint-conditions)
-  - Only stop your program when a condition is met
-  - "I want to know when in this loop the value is set to `null`"
+- Only stop your program when a condition is met
+- "I want to know when in this loop the value is set to `null`"
+
+##### Exception Settings ([CTRL+ALT+E](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger?view=vs-2019))
 
 ![image](https://user-images.githubusercontent.com/9797472/80111495-cea5fe00-8534-11ea-832a-06f2c026cd49.png)
 
-- Exception Settings ([CTRL+ALT+E](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger?view=vs-2019))
-  - Even with "Just My Code" turned on some debugging sessions can take a while to get started
-  - Turning off breaking on exceptions until your breakpoint is hit can save time
-- "Just My Code"
-  - By default only loads code that was built by you
-  - Necessary to turn this off if you want to step into code from other teams
+- Even with "Just My Code" turned on some debugging sessions can take a while to get started
+- Turning off breaking on exceptions until your breakpoint is hit can save time
+
+##### "Just My Code"
+
+- By default only loads code that was built by you
+- Necessary to turn this off if you want to step into code from other teams
+
+##### [Pin tool tips in editor](https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks?view=vs-2019#pin-data-tips)
 
 ![image](https://user-images.githubusercontent.com/9797472/80111221-7a9b1980-8534-11ea-942c-05178df3f6e8.png)
 
-- [Pin tool tips in editor](https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks?view=vs-2019#pin-data-tips)
-  - Allows you to inspect values quickly in the editor
-  - Drag them around to track multiple values at once
+- Allows you to inspect values quickly in the editor
+- Drag them around to track multiple values at once
 
-- Modules Window (CTRL+ALT+U)
+- Modules Window ([CTRL+ALT+U](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-modules-window?view=vs-2019))
 
 ### Testing
 
-- Run/debug tests from editor
-- run from codelens
-- test explorer
-  - run options
-  - filter tests
-  - grouping
-- test output
+#### Run tests from editor (CTRL+R,T)
+
+![image](https://user-images.githubusercontent.com/9797472/80119050-0c5b5480-853e-11ea-97b2-7025371139e9.png)
+
+- Place your cursor on any class or method to run tests
+
+#### Debug tests from editor (CTRL+R,CTRL+T)
+  
+- Place your cursor on any class or method to run tests
+
+#### Run from codelens
+
+![image](https://user-images.githubusercontent.com/9797472/80118901-dddd7980-853d-11ea-83ee-bcaa55932074.png)
+
+#### Test Explorer ([CTRL+E,T](https://docs.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019#run-tests-in-test-explorer))
+  
+- Run options
+  - You can choose to run all tests or just a few you select
+  - Filter tests
+    - If you have a lot of tests you can just show tests that have failed
+  - Grouping
+
+  ![image](https://user-images.githubusercontent.com/9797472/80118259-01ec8b00-853d-11ea-8edf-93983d37973c.png)
+
+#### Test output
+
+![image](https://user-images.githubusercontent.com/9797472/80119388-7ecc3480-853e-11ea-8d3a-d208a498bd95.png)
+
+- If tests aren't running for some reason you can go to the output window ([CTRL+shift+U](https://docs.microsoft.com/visualstudio/ide/reference/output-window?view=vs-2019)) and look for the `Tests` category in the drop-down.
