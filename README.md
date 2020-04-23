@@ -1,5 +1,7 @@
 # VS and You
-This is a resource for getting started with Visual Studio in devdiv!
+This is a resource for getting started with Visual Studio in devdiv! 
+
+This repo contains a trimmed down .NET console app from our [csharp tutorial docs](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes). We'll use it to demonstrate the got-to-know features of Visual Studio.
 
 ## Resources
 
