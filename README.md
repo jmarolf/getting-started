@@ -34,8 +34,8 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 
 ### Installation (1 mins) -JM
 
-- where to get th installer
-- which version to use
+- Install VS Preview: http://aka.ms/vspreview
+- That is the preview version, ask what your team recommends. (Dogfood version:http://aka.ms/vsdogfood)
 
 ### Developer command prompt (1 mins) -JN
 
