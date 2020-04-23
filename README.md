@@ -33,12 +33,12 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
       - [Exception Settings](#exception-settings-ctrlaltehttpsdocsmicrosoftcomvisualstudiodebuggermanaging-exceptions-with-the-debuggerviewvs-2019)
       - ["Just My Code"](#just-my-code)
       - [Pin tool tips in editor](#pin-tool-tips-in-editorhttpsdocsmicrosoftcomvisualstudiodebuggerdebugger-tips-and-tricksviewvs-2019pin-data-tips)
-    - [Testing](#testing)
-      - [Run tests from editor (CTRL+R,T)](#run-tests-from-editor-ctrlrt)
-      - [Debug tests from editor (CTRL+R,CTRL+T)](#debug-tests-from-editor-ctrlrctrlt)
-      - [Run from codelens](#run-from-codelens)
-      - [Test Explorer](#test-explorer-ctrlethttpsdocsmicrosoftcomvisualstudiotestrun-unit-tests-with-test-explorerviewvs-2019run-tests-in-test-explorer)
-      - [Test output](#test-output)
+  - [Testing](#testing)
+    - [Run tests from editor (CTRL+R,T)](#run-tests-from-editor-ctrlrt)
+    - [Debug tests from editor (CTRL+R,CTRL+T)](#debug-tests-from-editor-ctrlrctrlt)
+    - [Run from codelens](#run-from-codelens)
+    - [Test Explorer](#test-explorer-ctrlethttpsdocsmicrosoftcomvisualstudiotestrun-unit-tests-with-test-explorerviewvs-2019run-tests-in-test-explorer)
+    - [Test output](#test-output)
 
 ## Resources
 
