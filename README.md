@@ -4,6 +4,27 @@ This is a resource for getting started with Visual Studio in devdiv!
 
 This repo contains a trimmed down .NET console app from our [csharp tutorial docs](https://docs.microsoft.com/dotnet/csharp/tutorials/intro-to-csharp/introduction-to-classes). We'll use it to demonstrate the got-to-know features of Visual Studio.
 
+## Tabe of Contents
+
+- [Resources](#resources)
+- [Getting Started](#getting-started)
+  - [Learning .NET](#learning-net)
+  - [Source Control](#source-control)
+  - [Installation](#installation)
+  - [Developer command prompt](#developer-command-prompt)
+- [Using Visual Studio](#using-visual-studio)
+- [New Project Dialog](#new-project-dialog)
+- [Solution Explorer](#solution-explorer)
+- [Code Editor](#code-editor)
+  - [Basics](#basics)
+  - [Important General Tool Windows](#important-general-tool-windows)
+  - [Controling Views and Windows](#controling-views-and-windows)
+  - [Symbol navigation](#symbol-navigation)
+  - [Tools, Options](#tools-options)
+- [Solving Problem in Visual Studio](#solving-problem-in-visual-studio)
+  - [Debugging](#debugging)
+  - [Testing](#testing)
+
 ## Resources
 
 - [VS office hours with Mads and Scott](https://www.youtube.com/playlist?list=PLReL099Y5nRem6UA4w849hTfd0LzBIsAk)
