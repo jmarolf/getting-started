@@ -15,10 +15,6 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 
 ## Getting Started
 
-### Brief Intro to .NET
-
-- basic names of things
-- projects and such
 
 ### Source Control
 
