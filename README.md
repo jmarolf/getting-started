@@ -1,4 +1,5 @@
 # VS and You
+This is a resource for getting started with Visual Studio in devdiv!
 
 ## Resources
 
@@ -10,13 +11,6 @@
 - [VS How](https://aka.ms/vshow)
 - [index](http://index)
 - [AzDo search](https://dev.azure.com/devdiv/DevDiv/_search?text=test&type=code&action=contents)
-
-## Open Questions
-
-- which code repo should we use?
-  - we should describe _how_ to get the code so they can mirror us
-  - KDRA: pick a repo
-  - JN: clone/setup repo
 
 ## Getting Started
 
@@ -87,6 +81,7 @@
   - find-all-references
   - go-to-definition
 - right click menu de-confuse-i-tron
+  - Build with Ctrl+Shift+B
 - settings de-confuse-i-tron
   - intellisense for un-imported types
   - de-compiler
