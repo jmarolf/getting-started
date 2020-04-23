@@ -6,30 +6,13 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 
 ## Table of Contents
 
-- [Resources](#resources)
-- [Getting Started](#getting-started)
-  - [Learning .NET](#learning-net)
-  - [Source Control](#source-control)
-  - [Installation](#installation)
-  - [Developer command prompt](#developer-command-prompt)
-- [Using Visual Studio](#using-visual-studio)
-  - [New Project Dialog](#new-project-dialog)
-  - [Solution Explorer](#solution-explorer)
-  - [Code Editor](#code-editor)
-    - [Basics](#basics)
-    - [Important General Tool Windows](#important-general-tool-windows)
-    - [Controlling Views and Windows](#controlling-views-and-windows)
-    - [Symbol Navigation](#symbol-navigation)
-    - [Tools, Options](#tools-options)
-- [Solving Problem in Visual Studio](#solving-problem-in-visual-studio)
-  - [Debugging](#debugging)
-  - [Testing](#testing)
 
 ## Resources
 
 - [VS office hours with Mads and Scott](https://www.youtube.com/playlist?list=PLReL099Y5nRem6UA4w849hTfd0LzBIsAk)
 - [VS intro series](https://channel9.msdn.com/Series/Intro-to-Visual-Studio/?WT.mc_id=Educationalvside-c9-niner)
 - [VS Documentation](https://docs.microsoft.com/dotnet/core/tutorials/with-visual-studio?tabs=csharp)
+- [How to debug](https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners?view=vs-2019)
 - [VS How](https://aka.ms/vshow)
 - [index](http://index)
 - [AzDo search](https://dev.azure.com/devdiv/DevDiv/_search?text=test&type=code&action=contents)
@@ -40,12 +23,10 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 
 - [C# 101 series](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha)
 - [C# documentation](https://docs.microsoft.com/dotnet/csharp/)
-- [David Fowlers async guidance (super advanced)](https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md)
 
 ### Source Control
 
-![image](https://user-images.githubusercontent.com/9797472/80105173-090b9d00-852d-11ea-9384-35e7d13d8a18.png)
-- link to git resources
+- git resources
   - ~~[oh shit git!](https://ohshitgit.com/)~~
   - [official git tutorial](https://git-scm.com/docs/gittutorial)
   - [git tutorial from github](https://try.github.io/)
@@ -89,7 +70,7 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 - Open project
   - Probably the most used button :) opens an existing project
 - Open folder
-  - Allows you to open a folder. Not as useful as open project for .NET 
+  - Allows you to open a folder. Not as useful as open project for .NET
 - [Create project](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio?view=vs-2019)
   - UI to help you create a new project
 
@@ -99,7 +80,7 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 
 - Not a file view, shows ['projects'](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio?view=vs-2019)
 - Scope to this
-  - "I do not need to see all these other things right now, I need to focus" 
+  - "I do not need to see all these other things right now, I need to focus"
 - Search and filter (CTRL+;)
   - "I know the file I am looking for is in this view"
 - Right click menu de-confuse-o-tron
@@ -205,7 +186,7 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
   - De-compiler
     - I want to see how this is implemented
 
-## Solving Problem in Visual Studio
+## Solving Problems in Visual Studio
 
 ### Debugging
 
@@ -229,47 +210,76 @@ This repo contains a trimmed down .NET console app from our [csharp tutorial doc
 
 #### Basic
 
-- Add/Remove Breakpoint ([F9](https://docs.microsoft.com/en-us/visualstudio/debugger/using-breakpoints?view=vs-2019))
-- Debug ([F5](https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-debugger?toc=%2Fvisualstudio%2Fdebugger%2Ftoc.json&view=vs-2019#set-a-breakpoint-and-start-the-debugger))
+- Add/Remove Breakpoint ([F9](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019))
+- Debug ([F5](https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-debugger?toc=%2Fvisualstudio%2Fdebugger%2Ftoc.json&view=vs-2019#set-a-breakpoint-and-start-the-debugger))
   - Big green 'play' button
   - Launches whatever is set as the 'Startup Project'
-- Step Over (F10)
+- Step Over ([F10](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2019#step-through-code))
   - "Go to the next line"
-- Step Into (F11)
+- Step Into ([F11](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2019#BKMK_Step_over_Step_out))
   - like go-to-implementation earlier
   - "Let me see what is happening inside this method"
 - Move execution pointer
   - Just click and drag and its like it never happened!
   - Great if you accidentally stepped over something you meant step into
-- Run To Cursor (CTRL+F10)
+- Run To Cursor ([CTRL+F10](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger?view=vs-2019#run-to-a-cursor-location))
   - No need to set a breakpoint!
   - "Ok now I want to keep running the program past this loop until I get _here_"
-- Restart (CTRL+shift+F5)
+- Restart ([CTRL+shift+F5](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour?view=vs-2019#restart-your-app-quickly))
   - "I want to quickly restart this debug session"
   - Faster than stopping debugging and restarting
-  
-#### Advanced
+
+##### Watch Window ([CTRL+ALT+W](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows?view=vs-2019))
+
+![image](https://user-images.githubusercontent.com/9797472/80110555-a8339300-8533-11ea-8eb3-b9637e9b0f50.png)
+
+- Expression evaluator
+  - Type in anything and the debugger will evaluate it for you!
+  - You are able to watch the values change as you step through your program
+- Search
+  - Search by name _or_ value!
+- Pin
+  - Make it easier to keep track of deep inner variables
+
+##### Call Stack Window ([CTRL+ALT+C](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window?view=vs-2019))
+
+![image](https://user-images.githubusercontent.com/9797472/80112441-f8abf000-8535-11ea-8ac5-afe9383abce4.png)
+
+- View a list of methods and the order they called each other in
+- Jump to different methods
+
+##### Breakpoints Window ([CTRL+ALT+B](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019#BKMK_Specify_advanced_properties_of_a_breakpoint_))
+
+![image](https://user-images.githubusercontent.com/9797472/80110351-702c5000-8533-11ea-8840-709cf7e2de42.png)
+
+- See all your breakpoints in one place
+- Able to toggle them to "inactive" without deleting them
+
+#### Advanced Debugging
+
+##### Breakpoints
 
 ![image](https://user-images.githubusercontent.com/9797472/80109025-df08a980-8531-11ea-9148-b54d1e112305.png)
 
-- Breakpoints
-  - [Conditional Breakpoint](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019#breakpoint-conditions)
-    - only stop your program when a condition is met
-    - "I want to know when in this loop the value is set to `null`"
-  - Breakpoints Window (CTRL+ALT+B)
-    - See all your breakpoints in one place
-    - Able to toggle them to "inactive" without deleting them
-  - Exception Settings
-    - Even with "Just My Code" turned on some debugging sessions can take a while to get started
-    - Turning off breaking on exceptions until your breakpoint is hit can save time
-  - "Just My Code"
-    - by default only loads code that was built by you
-    - necessary to turn this off if you want to step into code from other teams
-- watch window
-  - search
-  - pin
-  - expression evaluator
-- pin tool tips in editor
+- [Conditional Breakpoint](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019#breakpoint-conditions)
+  - Only stop your program when a condition is met
+  - "I want to know when in this loop the value is set to `null`"
+
+![image](https://user-images.githubusercontent.com/9797472/80111495-cea5fe00-8534-11ea-832a-06f2c026cd49.png)
+
+- Exception Settings ([CTRL+ALT+E](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger?view=vs-2019))
+  - Even with "Just My Code" turned on some debugging sessions can take a while to get started
+  - Turning off breaking on exceptions until your breakpoint is hit can save time
+- "Just My Code"
+  - By default only loads code that was built by you
+  - Necessary to turn this off if you want to step into code from other teams
+
+![image](https://user-images.githubusercontent.com/9797472/80111221-7a9b1980-8534-11ea-942c-05178df3f6e8.png)
+
+- [Pin tool tips in editor](https://docs.microsoft.com/visualstudio/debugger/debugger-tips-and-tricks?view=vs-2019#pin-data-tips)
+  - Allows you to inspect values quickly in the editor
+  - Drag them around to track multiple values at once
+
 - Modules Window (CTRL+ALT+U)
 
 ### Testing
